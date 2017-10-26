@@ -1,0 +1,13 @@
+department department1 2 productA,50 productB,300
+department department1 3 productA,100
+department depadrian 11 pA,1000 pB,1132 pCC,1903
+department depadrian 2 pA,1000 pB,1132 pCC,1903
+select department1 1
+select department1 2
+select department1 3
+department department2 3 productA,100
+select department2 3
+select department2 2
+select depadrian 10
+select depadrian 11
+select depadrian 2

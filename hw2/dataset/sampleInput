@@ -1,0 +1,4 @@
+department department1 2 productA,50 productB,300
+department department1 3 productA,100
+select department1 1
+select department1 2

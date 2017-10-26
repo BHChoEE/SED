@@ -1,0 +1,32 @@
+no data in selected month!
+display MonthlyReport for department1 month 2
+productA 50
+productB 300
+display YTDSalesChart for department1
+month 2 price 350
+month 3 price 100
+display MonthlyReport for department1 month 3
+productA 100
+display YTDSalesChart for department1
+month 2 price 350
+month 3 price 100
+display MonthlyReport for department2 month 3
+productA 100
+display YTDSalesChart for department2
+month 3 price 100
+no data in selected month!
+no data in selected month!
+display MonthlyReport for depadrian month 11
+pA 1000
+pB 1132
+pCC 1903
+display YTDSalesChart for depadrian
+month 2 price 4035
+month 11 price 4035
+display MonthlyReport for depadrian month 2
+pA 1000
+pB 1132
+pCC 1903
+display YTDSalesChart for depadrian
+month 2 price 4035
+month 11 price 4035
