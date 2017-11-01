@@ -1,0 +1,13 @@
+company Food Object
+company Ball CSV
+company Guitar Object
+company Bass XML
+order 1 Ball BasketBall
+order 2 Guitar Ibanez
+transmit 2
+order 3 Bass Fender
+transmit 3
+company Book Object
+transmit 1
+order 4 Book Textbook 
+transmit 4

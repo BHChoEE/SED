@@ -1,0 +1,12 @@
+order 1: Ball order created in CSV format
+order 2: Guitar order created in Object format
+Guitar company receive order 2:
+<Object header>Ibanez<Object footer>
+order 3: Bass order created in XML format
+Bass company receive order 3:
+<XML header>Fender<XML footer>
+Ball company receive order 1:
+<CSV header>BasketBall<CSV footer>
+order 4: Book order created in Object format
+Book company receive order 4:
+<Object header>Textbook<Object footer>
