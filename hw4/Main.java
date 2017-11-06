@@ -4,12 +4,12 @@ import java.lang.*;
 
 class Composition{
     // object variable
-    private HashMap<Integer, Component> componentList;
+    private ArrayList<Component> componentList;
     private HashMap<String, ComposeMethod> composeMethodList;
 
     // constructor
     public Composition(){
-        this.componentList = new HashMap<Integer, Component>();
+        this.componentList = new ArrayList<Component>();
         this.composeMethodList = new HashMap<String, ComposeMethod>();
         composeMethodList.put("SimpleComposition", new SimpleComposition());
         composeMethodList.put("TexComposition", new TexComposition());
@@ -21,25 +21,29 @@ class Composition{
     }
 
     // setter & getter
-    public HashMap<Integer, Component> getComponentList(){ return componentList; }
+    public ArrayList<Component> getComponentList(){ return componentList; }
     public HashMap<String, ComposeMethod> getComposeMethodList(){ return composeMethodList; }
-    public void setComponentList(HashMap<Integer, Component> _componentList){ componentList = _componentList; }
+    public void setComponentList(ArrayList<Component> _componentList){ componentList = _componentList; }
     public void setComposeMethodList(HashMap<String, ComposeMethod> _composeMethodList){ composeMethodList = _composeMethodList; }
-    public void addComponent(Integer _id, Component _component) { componentList.put(_id, _component); }
+    public void addComponent(Component _component) { componentList.add( _component); }
     public void addComposeMethod(String _method, ComposeMethod _composeMethod) { composeMethodList.put(_method, _composeMethod); }
 
     // object method
     public void createComponent(Integer _id, Integer _naturalSize, Integer _stretchability, Integer _shrinkability, String _content, String _type){
         Component component = new Component(_id, _naturalSize, _stretchability, _shrinkability, _content);
         component.setType(_type);
-        componentList.put(_id, component);
+        componentList.add( component);
     }
     public void removeComponent(Integer _id){
         componentList.remove(_id);
     }
 
     public void changeSize(Integer id, Integer newSize){
-        componentList.get(id).changeSize(newSize);
+        for(int i = 0; i < componentList.size() ; ++i){
+            if(componentList.get(i).getId() == id)
+                componentList.get(i).changeSize(newSize);
+        }
+        
     }
     public void arrange(String breakStrategy){
         ComposeMethod composeMethod = composeMethodList.get(breakStrategy);
@@ -123,15 +127,17 @@ class GraphicalElement extends Component{
 }
 
 interface ComposeMethod{
-    public void compose(HashMap<Integer, Component> componentList );
+    public void compose(ArrayList<Component> componentList );
 }
 
 class SimpleComposition implements ComposeMethod{
     // constructor
     public SimpleComposition(){}
     // object method
-    public void compose(HashMap<Integer, Component> componentList ){
+    public void compose(ArrayList<Component> componentList ){
         for(int i = 0 ; i < componentList.size() ; ++i){
+            while(componentList.get(i) == null)
+                ++i;
             Component comp = componentList.get(i);
             Integer currentSize = comp.getCurrentSize();
             String content = comp.getContent();
@@ -145,8 +151,10 @@ class TexComposition implements ComposeMethod{
     // constructor
     public TexComposition() {}
     // object method
-    public void compose(HashMap<Integer, Component> componentList ){
+    public void compose(ArrayList<Component> componentList ){
         for(int i = 0 ; i < componentList.size() ; ++i){
+            while(componentList.get(i) == null)
+                ++i;
             Component comp = componentList.get(i);
             Integer currentSize = comp.getCurrentSize();
             String content = comp.getContent();
@@ -164,12 +172,14 @@ class ArrayComposition implements ComposeMethod{
     // constructor
     public ArrayComposition() {}
     // object method
-    public void compose(HashMap<Integer, Component> componentList ){
+    public void compose(ArrayList<Component> componentList ){
         for(int i = 0 ; i < componentList.size() ; ++i){
+            while(componentList.get(i) == null)
+                ++i;
             Component comp = componentList.get(i);
             Integer currentSize = comp.getCurrentSize();
             String content = comp.getContent();
-            if(i % 3 == 2)
+            if(i % 3 == 2 || i == componentList.size() - 1)
                 System.out.println("[" + currentSize + "]" + content);
             else
                 System.out.print("[" + currentSize + "]" + content + " ");

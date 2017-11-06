@@ -1,0 +1,50 @@
+component 0 size changed to 10
+component 3 failed to change size
+component 6 size changed to 50
+component 13 failed to change size
+[10]Hi
+[1]<ParagraphEnd>
+[12]nice
+[12]to
+[12]meet
+[12]you
+[50]scared.jpg
+[1]<ParagraphEnd>
+[12]Fuck
+[12]midterm
+[12]exam
+[12]you
+[1]<ParagraphEnd>
+[20]tired.jpg
+[10]Hi [1]<ParagraphEnd>
+[12]nice [12]to [12]meet [12]you [50]scared.jpg [1]<ParagraphEnd>
+[12]Fuck [12]midterm [12]exam [12]you [1]<ParagraphEnd>
+[20]tired.jpg [10]Hi [1]<ParagraphEnd> [12]nice
+[12]to [12]meet [12]you
+[50]scared.jpg [1]<ParagraphEnd> [12]Fuck
+[12]midterm [12]exam [12]you
+[1]<ParagraphEnd> [20]tired.jpg
+component 13 size changed to 87
+component 14 failed to change size
+[10]Hi
+[1]<ParagraphEnd>
+[12]nice
+[12]to
+[12]meet
+[12]you
+[50]scared.jpg
+[1]<ParagraphEnd>
+[12]Fuck
+[12]midterm
+[12]exam
+[12]you
+[1]<ParagraphEnd>
+[87]tired.jpg
+[10]Hi [1]<ParagraphEnd>
+[12]nice [12]to [12]meet [12]you [50]scared.jpg [1]<ParagraphEnd>
+[12]Fuck [12]midterm [12]exam [12]you [1]<ParagraphEnd>
+[87]tired.jpg [10]Hi [1]<ParagraphEnd> [12]nice
+[12]to [12]meet [12]you
+[50]scared.jpg [1]<ParagraphEnd> [12]Fuck
+[12]midterm [12]exam [12]you
+[1]<ParagraphEnd> [87]tired.jpg
