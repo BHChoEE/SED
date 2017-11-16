@@ -1,0 +1,17 @@
+Reserve #1. name: Llama1, tickets: 5
+Reserve #2. name: Llama2, tickets: 5
+Book fail. Not enough seats in requested performance.
+Pickup #2. name: Llama2, tickets: 5
+Pickup fail. No such reservation.
+Pickup fail. Identification check fail.
+Pickup fail. Identification check fail.
+Cancel #1. name: Llama1, tickets: 5
+Pickup fail. Reservation already cancelled.
+Cancel fail. No such reservation.
+Cancel fail. Reservation already picked up.
+Cancel fail. Identification check fail.
+Clear #1. name: Llama1, tickets: 5
+Reserve #3. name: Llama1, tickets: 5
+Book fail. Not enough seats in requested performance.
+Cancel #3. name: Llama1, tickets: 5
+Cancel fail. Reservation already cancelled.

@@ -1,0 +1,19 @@
+Reserve #1. name: CustomerA, tickets: 5
+Book fail. Not enough seats in requested performance.
+Reserve #2. name: CustomerA, tickets: 5
+Reserve #3. name: CustomerB, tickets: 3
+Reserve #4. name: CustomerC, tickets: 1
+Book fail. Not enough seats in requested performance.
+Pickup fail. Identification check fail.
+Pickup #2. name: CustomerA, tickets: 5
+Cancel #3. name: CustomerB, tickets: 3
+Reserve #5. name: CustomerB, tickets: 3
+Cancel fail. Identification check fail.
+Cancel #4. name: CustomerC, tickets: 1
+Cancel #5. name: CustomerB, tickets: 3
+Clear #3. name: CustomerB, tickets: 3
+Clear #4. name: CustomerC, tickets: 1
+Clear #5. name: CustomerB, tickets: 3
+Book fail. Not enough seats in requested performance.
+Cancel #1. name: CustomerA, tickets: 5
+Clear #1. name: CustomerA, tickets: 5

@@ -1,0 +1,22 @@
+performance 2 10 10
+book 1,1 2 Llama1 54187 5
+book 1,7 2 Llama2 54287 5
+book 1,8 2 Llama3 54387 1
+pickup 1,15 2 Llama2 54287
+pickup 1,16 4 Llama1 54187
+pickup 1,16 1 Llama2 54187
+pickup 1,16 1 Llama1 5418787
+cancel 1,18 1 Llama1 54187
+pickup 1,19 1 Llama1 54187
+cancel 1,19 4 Llama1 54187
+cancel 1,20 2 Llama2 54287
+cancel 1,20 2 Llama3 54287
+time 2,7
+time 2,8
+time 2,9
+time 2,10
+performance 3 23 6
+book 2,11 3 Llama1 54187 5
+book 2,12 3 Llama2 54287 5
+cancel 2,13 3 Llama1 54187
+cancel 2,13 3 Llama1 54187
