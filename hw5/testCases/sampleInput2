@@ -1,0 +1,17 @@
+attach Asia Statistics
+data Asia 21.0 0.9 1014.5 
+data Asia 19.5 0.3 1015.0 
+detach Asia Statistics 
+data Asia 18.0 0.1 1014.5
+attach Asia Forecast 
+attach Asia Statistics
+data Asia 17.3 0.6 1015.0
+attach Asia Current
+data Asia 16.5 0.8 1003.2
+attach US Forecast
+data US 21.0 0.9 1014.5 
+attach US Current
+data US 19.5 0.3 1015.0 
+detach US Current
+attach US Statistics
+data US 13.5 0.1 1022.4
